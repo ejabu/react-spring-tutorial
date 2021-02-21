@@ -101,18 +101,21 @@ a {
 @media only screen and (min-width: 320px) {
     .card-s {
         min-width: 280px;
+        max-width: 280px;
     }
 }
 
 @media only screen and (min-width: 436px) {
     .card-s {
         min-width: 400px;
+        max-width: 400px;
     }
 }
 
 @media only screen and (min-width: 680px) {
     .card-s {
         min-width: 480px;
+        max-width: 480px;
     }
 }
 
@@ -124,5 +127,15 @@ a {
 .box-section a:hover,
 .box-section a:focus,
 .box-section a:active {
+    text-decoration: underline;
+}
+a.link {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+a.link:hover,
+a.link:focus,
+a.link:active {
     text-decoration: underline;
 }

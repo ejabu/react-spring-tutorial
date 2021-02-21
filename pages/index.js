@@ -42,14 +42,29 @@ export default function Home() {
             <p>useSpring &bull; from &bull; to &bull; duration</p>
           </a>
         </div>
+        <h1>C. More values</h1>
+        <q>Do not think of the values you pass as "styles" per se</q>
+        <a
+          href="https://www.react-spring.io/docs/hooks/basics"
+          target="_blank"
+          className="link"
+        >
+          Go to Original Docs
+        </a>
+        <div className="grid grid-cols-2x">
+          <a href="./5-value" className={styles.card + " card-s"}>
+            <h3>5. Value &rarr;</h3>
+            <p>useSpring &bull; from &bull; to &bull; duration &bull; getValue() &bull; interpolate() </p>
+          </a>
+          <a href="./4-auto-opacity-size" className={styles.card + " card-s"}>
+            <h3>6. Interpolate within useSpring &rarr;</h3>
+            <p>useSpring &bull; from &bull; to &bull; duration</p>
+          </a>
+        </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://github.com/ejabu/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/ejabu/" target="_blank">
           @2021 - Muhammad Fahreza
         </a>
       </footer>
