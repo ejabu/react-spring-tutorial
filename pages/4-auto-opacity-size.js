@@ -1,30 +1,31 @@
 import { animated, useSpring } from "react-spring";
-import { useState } from "react";
+// import { useState } from "react";
 
 const Screen = () => {
-  const [clicked, setClicked] = useState(false);
   const springProps = useSpring({
     from: {
       opacity: 0,
+      fontSize: "14px",
     },
     to: {
-      opacity: clicked ? 1 : 0,
+      opacity: 1,
+      fontSize: "20px",
+    },
+    config: {
+      duration: 5000,
     },
   });
 
-  const runAnimation = () => {
-    setClicked(!clicked);
-  };
-
   return (
     <main className="box-mobile">
-      <h1>1. Simple Toggle</h1>
+      <h1>4. No Action</h1>
       <div className="box-section">
-        <h2>Action</h2>
-        <div>State : {clicked.toString()}</div>
-        <div className="box-action">
-          <button onClick={runAnimation}>Toggle</button>
-        </div>
+        <h2>Without Action</h2>
+        <p>Opacity and Size will be animated</p>
+        <p>
+          <a href="javascript: location.reload()">Refresh the Page</a> and wait
+          for 5 seconds
+        </p>
       </div>
       <div className="box-section">
         <h2>Result</h2>

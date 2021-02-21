@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Lets Learn React-Spring</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -20,23 +20,26 @@ export default function Home() {
             <code className={styles.code}>Ejabu</code>
           </a>
         </p>
-
+        <h1>A. Change Opacity</h1>
         <div className="grid grid-cols-2x">
           <a href="./1-simple" className={styles.card + " card-s"}>
             <h3>1. Simple Toggle &rarr;</h3>
             <p>useSpring &bull; from &bull; to </p>
           </a>
-          <a href="./1-simple" className={styles.card + " card-s"}>
-            <h3>1. Simple Toggle &rarr;</h3>
+          <a href="./2-no-action" className={styles.card + " card-s"}>
+            <h3>2. No Action &rarr;</h3>
+            <p>useSpring &bull; from &bull; to &bull; duration</p>
+          </a>
+        </div>
+        <h1>B. Change Opacity and Size</h1>
+        <div className="grid grid-cols-2x">
+          <a href="./3-simple-opacity-size" className={styles.card + " card-s"}>
+            <h3>3. Simple Toggle &rarr;</h3>
             <p>useSpring &bull; from &bull; to </p>
           </a>
-          <a href="./1-simple" className={styles.card + " card-s"}>
-            <h3>1. Simple Toggle &rarr;</h3>
-            <p>useSpring &bull; from &bull; to </p>
-          </a>
-          <a href="./1-simple" className={styles.card + " card-s"}>
-            <h3>1. Simple Toggle &rarr;</h3>
-            <p>useSpring &bull; from &bull; to </p>
+          <a href="./4-auto-opacity-size" className={styles.card + " card-s"}>
+            <h3>4. No Action &rarr;</h3>
+            <p>useSpring &bull; from &bull; to &bull; duration</p>
           </a>
         </div>
       </main>
